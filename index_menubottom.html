@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<!-- /**
+	STUDIO POINT - Parallax Responsive Retina Ready
+ 	Copyright (c) 2013, Subramanian 
+
+	Author: Subramanian
+    Profile: themeforest.net/user/FMedia/
+	
+    Version: 1.0.0
+	Release Date: February 2013
+**/ -->	
+
+    <html lang="en"> 
+    
+    <head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Legacy of Letters</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- CSS
+  ================================================== --> 
+  
+  <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  	
+    <!-- Included CSS files 
+	================================================== -->
+    
+  	<link rel="stylesheet" type="text/css"  href="css/main.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/base.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/color.css">
+	<link rel="stylesheet" type="text/css"  href="css/skeleton.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/flexslider.min.css" media="screen" />
+    <link rel="stylesheet" href="css/supersized.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/supersized.shutter.min.css" type="text/css" media="screen" />
+    
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+    <!-- Included javascript files 
+	================================================== -->
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!--[if !IE]><!-->
+	<script src="js/ios6-timers.js"></script> 
+    <!--<![endif]-->
+	<script type="text/javascript" src="js/custom.min.js"></script>
+    <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.isotope.min.js" ></script>  
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.detail.min.js"></script>  
+    <script type="text/javascript" src="js/main-fm.min.js"></script> 
+
+
+	<script type="text/javascript">
+
+		jQuery(function($){
+				
+			$.supersized({
+				
+				// Functionality
+				slideshow               :   1,			// Slideshow on/off
+				autoplay				:	1,			// Slideshow starts playing automatically
+				start_slide             :   1,			// Start slide (0 is random)
+				stop_loop				:	0,			// Pauses slideshow on last slide
+				random					: 	0,			// Randomize slide order (Ignores start slide)
+				slide_interval          :   7000,		// Length between transitions
+				transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				transition_speed		:	1000,		// Speed of transition
+				new_window				:	1,			// Image links open in new window/tab
+				pause_hover             :   0,			// Pause slideshow on hover
+				keyboard_nav            :   1,			// Keyboard navigation on/off
+				performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+				image_protect			:	1,			// Disables image dragging and right click with Javascript
+																   
+				// Size & Position						   
+				min_width		        :   0,			// Min width allowed (in pixels)
+				min_height		        :   0,			// Min height allowed (in pixels)
+				vertical_center         :   1,			// Vertically center background
+				horizontal_center       :   1,			// Horizontally center background
+				fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+				fit_portrait         	:   0,			// Portrait images will not exceed browser height
+				fit_landscape			:   0,			// Landscape images will not exceed browser width
+																   
+				// Components							
+				slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				thumb_links				:	1,			// Individual thumb links for each slide
+				thumbnail_navigation    :   0,			// Thumbnail navigation
+				slides 					:  	[			// Slideshow Images, image_small attribute is used to load the mobile version image, main_title attribute is used to add the image tile div
+														{image : 'images/home_slider/index_01.jpg', image_small : 'images/home_slider/index_01_s.jpg', main_title : ".home_slider_title0"},
+														{image : 'images/home_slider/index_02.jpg', image_small : 'images/home_slider/index_02_s.jpg', main_title : ".home_slider_title2"},  
+														{image : 'images/home_slider/index_03.jpg', image_small : 'images/home_slider/index_03_s.jpg', main_title : ".home_slider_title3"},
+														{image : 'images/home_slider/index_04.jpg', image_small : 'images/home_slider/index_04_s.jpg', main_title : ".home_slider_title4"},
+														{image : 'images/home_slider/index_05.jpg', image_small : 'images/home_slider/index_05_s.jpg', main_title : ".home_slider_title5"},
+														{image : 'images/home_slider/index_06.jpg', image_small : 'images/home_slider/index_06_s.jpg', main_title : ".home_slider_title6"},
+														{image : 'images/home_slider/index_07.jpg', image_small : 'images/home_slider/index_07_s.jpg', main_title : ".home_slider_title7"},  
+														{image : 'images/home_slider/index_08.jpg', image_small : 'images/home_slider/index_08_s.jpg', main_title : ".home_slider_title8"},
+														{image : 'images/home_slider/index_09.jpg', image_small : 'images/home_slider/index_09_s.jpg', main_title : ".home_slider_title9"},
+														{image : 'images/home_slider/index_10.jpg', image_small : 'images/home_slider/index_10_s.jpg', main_title : ".home_slider_title10"}
+                                        
+												],
+												
+				// Theme Options			   
+				progress_bar			:	1,			// Timer for each slide							
+				mouse_scrub				:	0
+						
+				});
+			});
+			
+
+	</script>
+
+
+
+
+
+
+    <script>
+	
+		/* Site Main plug-in initilize */
+		
+		$(document).ready(function(){
+			
+			
+
+			jQuery(function($){
+				$("body").mainFm({
+					
+					/* Set the opening page. 
+					leave it blank value if you need to show the home page as a opening page*/
+					currentPage : "!home",
+					
+					/* FlexSlider slideshow speed */
+					slideshowSpeed : 5000
+					
+				});
+			});
+
+
+
+			
+			//.parallax(xPosition, speedFactor, outerHeight) options:
+			//xPosition - Horizontal position of the element
+			//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+			//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+			$('.parallax').each(function(){
+				$(this).parallax("50%", 0.4, true);
+			});
+
+			
+
+/* Initialize  - isotope Portfolio */
+
+			$(function(){
+			  
+			  var $container = $('#gallery_isotope_1');
+			  var $optionSets = $('#options .option-set'),
+				  $optionLinks = $optionSets.find('a');
+		
+			  $optionLinks.click(function(){
+				var $this = $(this);
+				
+				// don't proceed if already selected
+				if ( $this.hasClass('selected') ) {
+				  return false;
+				}
+				var $optionSet = $this.parents('.option-set');
+				$optionSet.find('.selected').removeClass('selected');
+				$this.addClass('selected');
+		  
+				// make option object dynamically, i.e. { filter: '.my-filter-class' }
+				   var options = {},
+					  key = $optionSet.attr('data-option-key'),
+					  value = $this.attr('data-option-value');
+				  // parse 'false' as false boolean
+				  value = value === 'false' ? false : value;
+				  options[ key ] = value;
+				  if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+					// changes in layout modes need extra logic
+					changeLayoutMode( $this, options )
+				  } else {
+					// otherwise, apply new options
+					$container.isotope( options );
+				  }
+				
+				return false;
+			  });
+			  
+			});
+			
+			// Portfolio isotope gallery initailize
+
+			$('#gallery_isotope_1').isotope({ 
+				itemSelector : '.item', layoutMode : 'fitRows'
+    		});
+			
+			
+			// Portfolio isotope gallery categories Filter initialize
+			jQuery(function($){
+				$('.portfolioPage').detailPage({
+					filter : ".filter_options",
+					buttonColor : "white_arrow"
+				})
+			});	
+			
+
+// Email submit action			
+			$("#email_submit").click(function() { 
+									
+				$('#reply_message').removeClass();
+				$('#reply_message').html('')
+				var regEx = "";	 
+								
+				// validate Name				
+				var name = $("input#name").val();  
+				regEx=/^[A-Za-z .'-]+$/; 
+				if (name == "" || name == "Name"  || !regEx.test(name)) { 
+					$("input#name").val(''); 
+					$("input#name").focus();  
+					return false;  
+				}
+				
+				// validate Email						  
+				var email = $("input#email").val();  
+				regEx=/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;											
+				if (email == "" || email == "Email" || !regEx.test(email)) { 
+					$("input#email").val(''); 
+					$("input#email").focus();  
+					return false;  
+				}  
+				
+				// validate comment			
+				var comments = $("textarea#comments").val(); 
+				if (comments == "" || comments == "Comments..." || comments.length < 2) { 
+					$("textarea#comments").val(''); 
+					$("textarea#comments").focus();  
+					return false;  
+				}  
+									
+				var dataString = 'name='+ $("input#name").val() + '&email=' + $("input#email").val() + '&comments=' + $("textarea#comments").val();									
+				$('#reply_message').addClass('email_loading');
+				
+				// Send form data to mailer.php 
+				$.ajax({
+					type: "POST",
+					url: "mailer.php",
+					data: dataString,
+					success: function() {
+						$('#reply_message').removeClass('email_loading');
+						$('#reply_message').addClass('list3');
+						$('#reply_message').html("Mail sent sucessfully")
+						.hide()
+						.fadeIn(1500);
+							}
+						});
+				return false;
+				
+			});
+			
+				
+		});
+		
+		
+	</script>
+
+
+    
+</head>
+<body >
+
+
+
+<div class="pageFade" > </div>
+
+<!--
+Site main frame begin
+Note: Don't edit main frame, except comment area
+-->
+
+
+
+
+
+
+<!-- 
+Note: mobile_spacing class is used to add spacing arround the content in mobile device not in desktop,
+if you remove the mobile_spacing class, the layout design doesn't effect in desktop it only effect in mobile device
+--> 
+
+ 
+ <!-- Supersized home page slider show Arrow Navigation-->
+<div id="superNav">
+	<a id="prevslide" class="load-item padBottom" ></a>
+	<a id="nextslide" class="load-item padBottom" ></a>
+ 	<a id="play-button" class="padBottom" ><img id="pauseplay" src="images/supersized/pause.png" /></a>
+</div> 
+
+
+<div class="contentWrapper homeSlider" data-id="!home" >
+	<div class="homepage_con">
+
+    	
+        <!-- Homepage fullscreen slideshow Title text 1 -->
+		<div class="home_slider_title1" ></div>
+    	
+        
+         <!-- Homepage fullscreen slideshow Title text 2 -->
+         <div class="home_slider_title2"  ></div>
+        
+        
+         <!-- Homepage fullscreen slideshow Title text 3 -->
+		<div class="home_slider_title3 blockquote_large"  ></div>
+    
+    	
+        
+         <!-- Homepage fullscreen slideshow Title text 4 -->
+        <div class="home_slider_title4" > </div>
+        
+        
+         <!-- Homepage fullscreen slideshow Title text 5 -->
+        <div class="home_slider_title5" ></div>
+        
+        <!-- Homepage fullscreen slideshow Title text 6 -->
+        <div class="home_slider_title6" ></div>
+    
+        <!-- Homepage fullscreen slideshow Title text 7 -->
+        <div class="home_slider_title7" ></div>
+        
+        <!-- Homepage fullscreen slideshow Title text 8 -->
+        <div class="home_slider_title8" ></div>
+        
+     
+        
+        <!-- Homepage fullscreen slideshow Title text 9 -->
+        <div class="home_slider_title9" ></div>
+        
+        <!-- Homepage fullscreen slideshow Title text 10 -->
+        <div class="home_slider_title10" ></div>
+	
+   
+  </div>  
+</div>    
+ 
+
+
+
+
+
+
+<div class="header stayBottom" >
+    
+	<div class="container" style="width:100%" >
+       
+        <div class="logo " >
+			<a href="#!home"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+        </div>
+       
+		<div class="nav" >
+			<ul id="navHolder" >
+                <!--  Add require site page navigation -->                    
+                <li><a href="#!home" class="first">ON POST</a></li> 
+                <li><a href="#!aboutus">Letters</a></li>
+                                                    
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+ 
+<!-- About us  page -->
+        
+<div class="contentWrapper"  data-id="!aboutus" >
+
+	<div class="fullWidth titleTop lightStyle">
+		<div class="container" >  
+        	<div class="sixteen columns"> 
+                    <div class="mobile_spacing">
+                    	 <span class="title_text" >Letters from Soldiers</span>
+                    </div>
+			</div>
+        </div>
+  	</div>
+    
+     
+    <div class="fullWidth darkStyle" > 
+        <div class="container" >        
+                      
+            <div class="separator_mini"></div> 
+            
+             <div class="sixteen columns" >
+				<div class="mini_description">
+                    <p>I made a vow to God. If I made it out of this war alive, I would carry my youngest daughter on my back to stairs of the cathedral to be baptized. </p>
+
+<p>My wife keeps asking me, “When will you return?” When will I return? </p>
+
+<p>“Soon,” I said, “once the infantry leaves the shores of Iwo Jima. I’ll be home before the end of the summer.” We’re preparing for the invasion of Japan. </p>
+
+<p>“She walked for the first time today. A few bumbling steps, but she marches forward.”</p>
+
+<p>How many days has it been since we landed on this hellhole? I don’t know. The days blur together.</p>
+
+<p>These men are of the old breed, these men are our commanding officer. The very men put in charge of our lives. I can now see white sands of Pacific before me. </p>
+
+                    <hr>
+				</div>
+			</div>
+            
+            <div class="clear"></div> 
+            
+
+
+   
+        
+        <!-- Page scroll down to Next page -->
+        <a class=" move_down_white" href="#!services"><span></span></a>
+                 
+	</div>
+    
+</div>
+
+
+
+
+
+
+
+    
+</div>
+
+
+</body>
+
+</html>
