@@ -1,28 +1,26 @@
-<!DOCTYPE html>
-
-<!-- /**
-	STUDIO POINT - Parallax Responsive Retina Ready
- 	Copyright (c) 2013, Subramanian 
-
-	Author: Subramanian
-    Profile: themeforest.net/user/FMedia/
-	
-    Version: 1.0.0
-	Release Date: February 2013
-**/ -->	
-
-    <html lang="en"> 
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Of Soldier Blood</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-    <head>
-
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>STUDIO POINT - Parallax Responsive Retina Ready</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -51,7 +49,7 @@
 	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.min.css" media="screen" />
     <link rel="stylesheet" type="text/css"  href="css/flexslider.min.css" media="screen" />
     <link rel="stylesheet" href="css/supersized.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="css/supersized.shutter.min.css" type="text/css" media="screen" />
+     <link rel="stylesheet" href="css/supersized.shutter.min.css" type="text/css" media="screen" />
     
     <!--[if gte IE 9]>
       <style type="text/css">
@@ -60,10 +58,29 @@
         }
       </style>
     <![endif]-->
-
+    
+    
+    <!-- Included CSS for Flowtime.js 
+    ================================================== --> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flowtime.css">
+   <!-- <link rel="stylesheet" href="css/default.css">-->
+    <link rel="stylesheet" href="css/prism.css">
+    
+    <!-- include typekit -->
+    <script type="text/javascript" src="//use.typekit.net/taw2maw.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <!-- include boilerplates and UI Kit styling -->
+    <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/uikit.gradient.css" rel="stylesheet" type="text/css">
+    <link href="css/addons/uikit.almost-flat.addons.min.css" type="text/css">
+    
+    
     <!-- Included javascript files 
 	================================================== -->
-    
+  
     <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
     <!--[if !IE]><!-->
 	<script src="js/ios6-timers.js"></script> 
@@ -90,8 +107,8 @@
 				start_slide             :   1,			// Start slide (0 is random)
 				stop_loop				:	0,			// Pauses slideshow on last slide
 				random					: 	0,			// Randomize slide order (Ignores start slide)
-				slide_interval          :   5000,		// Length between transitions
-				transition              :   8, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				slide_interval          :   7000,		// Length between transitions
+				transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
 				transition_speed		:	1000,		// Speed of transition
 				new_window				:	1,			// Image links open in new window/tab
 				pause_hover             :   0,			// Pause slideshow on hover
@@ -113,11 +130,9 @@
 				thumb_links				:	1,			// Individual thumb links for each slide
 				thumbnail_navigation    :   0,			// Thumbnail navigation
 				slides 					:  	[			// Slideshow Images, image_small attribute is used to load the mobile version image, main_title attribute is used to add the image tile div
-														{image : 'images/home_slider/image1.jpg', image_small : 'images/home_slider/image1_s.jpg', main_title : ".home_slider_title1"},
-														{image : 'images/home_slider/image2.jpg', image_small : 'images/home_slider/image2_s.jpg', main_title : ".home_slider_title2"},  
-														{image : 'images/home_slider/image3.jpg', image_small : 'images/home_slider/image3_s.jpg', main_title : ".home_slider_title3"},
-														{image : 'images/home_slider/image4.jpg', image_small : 'images/home_slider/image4_s.jpg', main_title : ".home_slider_title4"},
-														{image : 'images/home_slider/image5.jpg', image_small : 'images/home_slider/image5_s.jpg', main_title : ".home_slider_title5"}
+														{image : 'images/home_slider/index_02.jpg', image_small : 'images/home_slider/index_02_s.jpg', main_title : ".home_slider_title1"},  
+														{image : 'images/home_slider/index_06.jpg', image_small : 'images/home_slider/index_06_s.jpg', main_title : ".home_slider_title2"}, 
+														{image : 'images/home_slider/index_09.jpg', image_small : 'images/home_slider/index_09_s.jpg', main_title : ".home_slider_title3"}
 												],
 												
 				// Theme Options			   
@@ -129,15 +144,11 @@
 			
 
 	</script>
-
-
-
-
-
-
-    <script>
+    
+    
+     <script>
 	
-		/* Site Main plug-in initilize */
+				/* Site Main plug-in initilize */
 		
 		$(document).ready(function(){
 			
@@ -279,17 +290,17 @@
 			
 				
 		});
-		
-		
 	</script>
 
 
     
 </head>
-<body >
-
-
-
+    
+    
+<body>
+    
+    
+    
 <div class="pageFade" > </div>
 
 <!--
@@ -297,39 +308,6 @@ Site main frame begin
 Note: Don't edit main frame, except comment area
 -->
 
-
-
-<div class="header black_nav" >
-            
-	<div class="header_bg"></div>	
-    
-	<div class="container" >
-       
-       <div class="logo logoStayTop" >
-			<a href="#!home"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
-		</div>
-       
-		<div class="nav" >
-			<ul id="navHolder" >
-                <!--  Add require site page navigation -->                    
-                <li><a href="#!home" class="first">HOME</a></li> 
-                <li><a href="#!aboutus">ABOUT US</a></li>
-                <li><a href="#!services">SERVICES</a></li>
-                <li><a href="#!portfolio">PORTFOLIO</a></li>
-                <li><a href="#!">FEATURES</a>
-                	<ul>
-                    	<li><a href="#!sample_video">VIDEO</a></li>
-                    	<li><a href="blog.html">BLOG</a></li>
-                        <li><a href="blog_post.html">BLOG POST</a></li>
-                        <li><a href="features.html">FEATURE</a></li>
-                    </ul>
-                </li>
-                <li><a href="#!contactus" class="last">CONTACT US</a></li>                                          
-			</ul>
-		</div>
-
-	</div>
-</div>
 
 
 
@@ -342,10 +320,10 @@ if you remove the mobile_spacing class, the layout design doesn't effect in desk
 
  
  <!-- Supersized home page slider show Arrow Navigation-->
- <div id="superNav">
-	<a id="prevslide" class="load-item" ></a>
-	<a id="nextslide" class="load-item" ></a>
- 	<a id="play-button"><img id="pauseplay" src="images/supersized/pause.png" /></a>
+<div id="superNav">
+	<a id="prevslide" class="load-item padBottom" ></a>
+	<a id="nextslide" class="load-item padBottom" ></a>
+ 	<a id="play-button" class="padBottom" ><img id="pauseplay" src="images/supersized/pause.png" /></a>
 </div> 
 
 
@@ -354,50 +332,20 @@ if you remove the mobile_spacing class, the layout design doesn't effect in desk
 
     	
         <!-- Homepage fullscreen slideshow Title text 1 -->
-		<div class="home_slider_title1" >
-			<div class="textAlignCenter">
-    			<h1><span class="textBackground">Studio point</span></h1>
-     	   		<h2><span class="light_color">Creative Portfolio one page Template</span></h2>
-			</div>
-		</div>
+		<div class="home_slider_title1" ></div>
     	
         
          <!-- Homepage fullscreen slideshow Title text 2 -->
-         <div class="home_slider_title2"  >
-            <h1><span class="light_color">Traditional graphic design</span></h1>
-            <h2><span class="light_color">We are looking forward to working on exciting projects</span></h2>
-        </div>
+         <div class="home_slider_title2"  ></div>
         
         
          <!-- Homepage fullscreen slideshow Title text 3 -->
-		<div class="home_slider_title3 blockquote_large"  >
-			<div class=" light_color"  >
-					<h2><span class="textBackground_black">Best Look in Desktop, Tab and Mobile device</span></h2>
-					<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-				
-			</div>
-		</div>
+		<div class="home_slider_title3"  ></div>
     
     	
         
-         <!-- Homepage fullscreen slideshow Title text 4 -->
-        <div class="home_slider_title4" >
-            <span class="darkBgTransparent" >
-                <h4 class="light_color">Detail Description Text</h4>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-            </span>
-        </div>
-    
-		 <!-- Homepage fullscreen slideshow Title text 5 -->
-        <div class="container home_slider_title5" >
-            <span class="slider5_text" >
-                <h1><span class="textBackground_black">INTELLIGENT FILTERABLE PORTFOLIO</span></h1>
-                <h2><span class="light_color">With Flexible detail page power by isotope image gallery</span></h2>
-            </span>
-        </div>
-    
-    	<!-- Page scroll down to Next page -->
-     	<a class="move_down_white bottomAlign" href="#!aboutus" ><span></span></a>
+
+	
    
   </div>  
 </div>    
@@ -406,7 +354,33 @@ if you remove the mobile_spacing class, the layout design doesn't effect in desk
 
 
 
- 
+
+
+<div class="header stayBottom" >
+    
+	<div class="container" style="width:100%" >
+       
+        <div class="logo " >
+			<a href="#!home"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+        </div>
+       
+		<div class="nav" >
+			<ul id="navHolder" >
+                <!--  Add require site page navigation -->                    
+                <li><a href="#!home" class="first">ON POST</a></li> 
+                <li><a href="#!aboutus">Usage</a></li>
+                <li><a href="story.html">Begin Reading</a></li>
+                                                    
+			</ul>
+		</div>
+
+	</div>
+</div>
+    
+    
+    
+    
+     
 <!-- About us  page -->
         
 <div class="contentWrapper"  data-id="!aboutus" >
@@ -415,7 +389,7 @@ if you remove the mobile_spacing class, the layout design doesn't effect in desk
 		<div class="container" >  
         	<div class="sixteen columns"> 
                     <div class="mobile_spacing">
-                    	 <span class="title_text" >About Us</span>
+                    	 <span class="title_text" ><br><br>Letters from Soldiers<br><br></span>
                     </div>
 			</div>
         </div>
@@ -429,87 +403,39 @@ if you remove the mobile_spacing class, the layout design doesn't effect in desk
             
              <div class="sixteen columns" >
 				<div class="mini_description">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-                    Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    <p>Of the Old Breed is a World War II interactive narrative that follows the life of a soldier. Users are able to choose what path the soldier goes on and decides the life decisions of their life. Ultimately, the user controls the fate of the soldier, becomes immersed in his story and understands consequences of their actions, along with the emotional impacts on their family.  </p>
+                    
+                    <p>World War II veterans are quickly fading from our daily lives as time continues to march on. In order to preserve their legacies, memories and experiences this interactive narrative is designed to target a large audience that encompasses military families, veterans, historical fiction fans, students, and “nostalgiaists”. Military families and veterans expect any creative work to be respectful to the military. Fans of historical fiction and students will expect historical accuracy. Nostalgiaists like being immersed in a different time period. All of these demographic groups are highly educated and perceptive. They will expect a story that is not only truthful but illuminates a greater meaning than the characters and events taking place. </p>
+
+<p>Of the Old Breed intends to immerse the viewer in story that places the life, actions, and happiness of soldier in their hands along with reliving famous battles from World War II. Users will expect the characters to be human and tangible. </p>
+
+<p><b>Communication Context </b></p>
+<p>This narrative will be a web app that incorporates other visual mediums including photographs, letters, and audio from World War II. Although these other forms of communication are digitized, they will improve the narrative’s tangibility and have kinesthetic effects on the user. </p>
+
+<p><b>Design Implications </b></p>
+<p>The user interface needs to follow a visual style in order to reflect the time period. The visual style will incorporate grainy images, muted colors, and handwriting. The HBO series Band of Brothers and The Pacific inspired the art direction Of the Old Breed. The films are vividly rich with textures that resemble the photo graininess and the rough canvas feel of a soldier’s uniforms. As well, they use muted colors to set the bleak, harsh environment of a warfront. The UI will incorporate some skeumorphism, mostly replicating the gritty look of a battlefield. As an interactive narrative, the UI will also be following minimalistic design trends. The images and text are primary focus of attention. </p>
+                    
+<p><b>Narrative Structure, Performance Objects, Content</b></p>
+Narrative Structure
+<p>It has a branching structure from a single point where a single starting point may lead to multiple developments and outcomes. This branching structure creates a divergently depth navigation system that is impacted by the user’s choices. Technically there are two navigational flows, the path of the soldier and the screen menus. The soldier’s path traverses on different points, whereas the screen menus will only show four item selections. Whichever item selection is chosen influences the soldier’s course. </p>
+
+<p>Performance Objectives
+1.	Present an accurate WWII narrative that immerse the viewer in the story
+2.	Show how the consequences of our actions impact family. 
+3.	Create an understanding of how soldiers cope with death breathing down their necks. 
+The three objectives above outline the overall performance objectives of this piece. Nonetheless, the objectives of each part of the story will be achieved through a series of menus.</p>
+
+
+
                     <hr>
 				</div>
 			</div>
             
             <div class="clear"></div> 
             
-            <div class="row" >
-               
-                        
-				<div class="one-third column " >
-					<div class="mobile_spacing"> 
-						<div class="img_place" >
-							<img src="images/about_image1.jpg" class="scale-img "  > 
-							<div class="overlay social" >
-								<ul class="social_bookmarks" >                    
-									<li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
-									<li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
-									<li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
-									<li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
-									<li class="rss_white noMargin"><a >RSS</a></li>   
-								</ul>
-                    		</div>
-                    	</div>
-                    	<div class="separator_mini"></div> 
-                    	<h4><a>Michale clarke</a></h4>
-                    	<h6>Project Manager</h6>
-                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                    	<hr>
-					</div>
-				</div>                      
-                          
-                            
-				<div class="one-third column " >
-                     <div class="mobile_spacing"> 
-						<div class="img_place" >
-							<img src="images/about_image2.jpg" class="scale-img "  >  
-                    		<div class="overlay social" >
-                    			<ul class="social_bookmarks" >                    
-									<li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
-									<li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
-									<li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
-									<li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
-									<li class="rss_white noMargin"><a >RSS</a></li>   
-                    			</ul>
-                    		</div>
-						</div> 
-                        <div class="separator_mini"></div> 
-                        <h4><a>Stephen Fleming</a></h4>
-                    	<h6>Graphic Designer</h6>
-                    	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                    	<hr>
-					</div>
-				</div>  
-    
-                                     
-				<div class="one-third column ">  
-                     <div class="mobile_spacing">                    
-                    	<div class="img_place" >
-                    		<img src="images/about_image3.jpg" class="scale-img"  > 
-                    		<div class="overlay social" >
-                    			<ul class="social_bookmarks" >                    
-                    				<li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
-                    				<li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
-                    				<li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
-                    				<li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
-                    				<li class="rss_white noMargin"><a >RSS</a></li>   
-                    			</ul>
-                    		</div> 
-						</div> 
-                        <div class="separator_mini"></div> 
-                        <h4><a>Lisa Michale</a></h4>
-                        <h6>Relationship Manager</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-                        <hr>
-					</div>
-				</div>
-            </div>
 
-        </div>
+
+   
         
         <!-- Page scroll down to Next page -->
         <a class=" move_down_white" href="#!services"><span></span></a>
@@ -524,1239 +450,99 @@ if you remove the mobile_spacing class, the layout design doesn't effect in desk
 
 
 
-
-<!-- Client  -->
-
-<div class="contentWrapper  titleTop lightStyle">
-	<div class="container" >  
-		<div class="sixteen columns"> 
-			<div class="mobile_spacing">
-				<span class="title_text" >Our Clients</span>
-			</div>
-		</div>
-	</div>
-</div>
-  
-<!-- Parallax content data-src attribute is used to set the larg size image for desktop and 
-	 data-src-small is used to set the small size image for mobile device --> 
-        
-<div class="contentWrapper parallax" data-src="images/background/image1.jpg" data-src-small="images/background/image1_s.jpg" >
-	<div class="parallaxPattern"></div>
-	<div class="container" >
-		<div class="table_left" >
-			<hr>
-			<a class="imgBtn">	<img src="images/client1.png">	</a>
-			<a class="imgBtn">	<img src="images/client2.png">	</a>
-			<a class="imgBtn">	<img src="images/client3.png">	</a>
-			<a class="imgBtn">	<img src="images/client4.png">	</a>
-			<hr> 
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- Services Page -->
-
-<div class="contentWrapper titleTop lightStyle" data-id="!services" >
-	<div class="container" >  
-		<div class="sixteen columns"> 
-			<div class="mobile_spacing">
-				<span class="title_text" >Our Services</span>
-			</div>
-		</div>
-	</div>
+    
 </div>
 
 
     
-<div class="contentWrapper darkStyle" >    
-	<div class="container" >
-
-		<div class="sixteen columns">
-			<hr>
-            <div class="separator_mini"></div> 
-			<div class="mini_description">
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-			</div>
-		</div>
-         
-        <hr>           
-		<div class="separator_mini"></div>
-                
-		<div class="nine columns" >
-			<div class="mobile_spacing">       
-				<!-- Tab Navigation Begin -->       
-				<ul class="tabs">
-					<li><a href="#staff" class="active" >Staff</a></li>
-                    <li><a href="#video">Video</a></li>
-					<li><a href="#strategy">Strategy</a></li>
-				</ul>
-                                                    
-				<!-- Tab Content -->                      
-				<ul class="tabs-content">   
-                      
-					<li id="staff"  class="active"> 
-                    	<div class="row alpha ">
-                        	<span class="smallImg " > <img class="border1" src="images/team_img1.jpg" alt="Wonder" /></span>                
-                        	<h5 class="title title_bottomspace">Aline marke</h5>
-                        	consectetur adipiscing elit ligula.  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                        </div>
-                              
-                        <div class="row alpha ">
-                        	<span class="smallImg " ><img class="border1" src="images/team_img2.jpg" alt="Wonder" /></span>
-                        	<h5 class="title title_bottomspace">Nissa revane</h5>
-                        	Maecenas sed justo varius sed justo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy 
-                        </div>
-                     </li>                
-					
-                     <li id="video" >
-                     	<div class="tabVideo midVideo" >
-							<div class="addVideo " data-width="100%" data-height="288px" data-autoplay="false" data-url="http://vimeo.com/45778774" ></div>
-                     	</div>
-                     	<hr>
-                     </li> 
-					   
-                                                        
-                     <li id="strategy">
-                     	<div class="row alpha ">
-							<div class="mobile_right_spacing">
-								<h4 >Our strength</h4>
-								<p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna volutpat.</p>
-							</div>
-						</div>
-                                   
-						<div class="row alpha">
-							<div class="mobile_right_spacing">
-								<p><span class="smallImg " ><img  class="border1" src="images/team_img3.jpg" alt="Wonder" /></span>Consectetuer ipsum dolor sit amet, lorem adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis.</p>
-							</div>
-                     	</div>
-                     	<hr>
-                     </li>
-                                                    
-				</ul>
-                <!-- End Tab Example -->
-                                               
-			</div>           
-		</div>
-                    
-		<div class="six columns offset-by-one" > 
-			<h3>Our Skill </h3>
-            <div class="separator_mini"></div>
-            <div class="graph_container">
-				<ul>
-					<li data-level="80%" ><a></a> <span>Web Design </span></li>
-					<li data-level="70%"><a></a> <span>Software Development</span></li>
-					<li data-level="90%"><a></a> <span>Branding & Identity</span></li>
-					<li data-level="50%" class="last"><a></a> <span>Motion Picture</span></li>
-				</ul>
-			</div>  
-		</div> 
-         
-		<hr> 
-                    
-		<div class="sixteen columns" > 
-			<div class="mobile_spacing">
-				<h2> Our Skill Area </h2>
-			</div>
-		</div>
-                
-		<div class="row">
-			<a class="circleHolder alignCenter single_image" data-title='<h5 class="light_color">Mini description about project</h5>'  href="images/portfolio/image5.jpg" target="_self" >
-				<div class="flipPanel smallCircle" >
-					<div class="circle front service_icon1_w" ></div>
-					<div class="circle back">
-						<span class="padTopLarge">
-							<h5 class="light_color">click to see</h5>
-							<h5 class="light_color"><strong>The project</strong></h5>
-						</span>
-					</div>
-				</div>
-                
-				<span class="description">
-					<h4>Web & Print design </h4>
-					<p>nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
-				</span>
-			</a>
-               
-                   
-			<a class="circleHolder alignCenter single_image" data-title='<h5 class="light_color">Load YouTube and Vimeo video</h5>'  href="http://www.youtube.com/watch?v=QVd_QZ3ZlM8" target="_self" > 
-				<div class="flipPanel smallCircle" >
-					<div class="circle front service_icon2_w"></div>
-					<div class="circle back">
-						<span class="padTopLarge">
-							<h5 class="light_color">click to see</h5>
-							<h5 class="light_color"><strong>The project</strong></h5>
-						</span>
-					</div>
-				</div>
-                
-                <span class="description">
-                    <h4>Software Development </h4>
-                    <p >nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
-            	</span>
-			</a>
-              
-                   
-			<a class="circleHolder alignCenter single_image" data-title='<span class="light_color">Mini description about project, eorem ipsum dolor sit amet, consectetur adipisicing elit</span>'  href="images/portfolio/image6.jpg" target="_self" >
-				<div class="flipPanel smallCircle" >
-					<div class="circle front service_icon3_w" ></div>
-					<div class="circle back">
-						<span class="padTopLarge">
-							<h5 class="light_color">click to see</h5>
-							<h5 class="light_color"><strong>The project</strong></h5>
-						</span>
-					</div>
-				</div>
-                
-                <span class="description">
-                    <h4>Mobile Application</h4>
-                    <p>nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
-            	</span>
-			</a>   
-              
-
-			<a class="circleHolder alignCenter single_image" data-title='<h5 class="light_color">Mini description about project</h5>'  href="images/portfolio/image7.jpg" target="_self" >  
-				<div class="flipPanel smallCircle" >
-					<div class="circle front service_icon4_w" ></div>
-					<div class="circle back">
-						<span class="padTopLarge">
-							<h5 class="light_color">click to see</h5>
-							<h5 class="light_color"><strong>The project</strong></h5>
-						</span>
-					</div>
-				</div>
-                
-                <span class="description">
-                	<h4>Branding & Identity</h4>
-                    <p >nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
-                </span>
-			</a>    
-                 
-			
-            <a class="circleHolder alignCenter single_image"  data-title='<h5 class="light_color">Load YouTube and Vimeo video</h5>'  href="http://player.vimeo.com/video/45778774?portrait=0&color=ef3d42" target="_self" > 
-				<div class="flipPanel smallCircle" >
-					<div class="circle front service_icon5_w" ></div>
-					<div class="circle back">
-						<span class="padTopLarge">
-							<h5 class="light_color">click to see</h5>
-							<h5 class="light_color"><strong>The project</strong></h5>
-						</span>
-					</div>
-				</div>
-                
-                <span class="description">
-                    <h4>Motion <br> Picture</h4>
-                    <p >nonummy nibh euismod tincidunt ut euismod tincidunt ut </p>
-            	</span>
-			</a>   
-
-		</div>
-		
-        <!-- Page scroll down to Next page -->
-        <a class=" move_down_white" href="#!portfolio"><span></span></a>
-                 
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Twitter section -->
-<!-- Parallax content data-src attribute is used to set the larg size image for desktop and 
-	 data-src-small is used to set the small size image for mobile device --> 
-
-<div class="contentWrapper parallax" data-src="images/background/image2.jpg" data-src-small="images/background/image2_s.jpg" >
-	<div class="parallaxPattern"></div>
-        <div class="container darkStyle bg_transparent" >
-            <div class="table_left" >
-    			<hr>
-                <h2>Recent Twitter</h2>
-                <div class="separator_mini"></div>
-                <ul id="twitter_update_list"></ul>
-            	<hr>
-    	</div>  
-		
-	</div>
-</div>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js" ></script>
-<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline.json?screen_name=envato&include_rts=true&count=1&callback=twitterCallback2" ></script>
-
-
-
-
-
-
-
-
-
-<!-- Portfolio Page start-->
-
-<!-- Category -->
-<div class="contentWrapper  fullWidth titleTop lightStyle filter_options" data-id="!portfolio" >
-      <div class="container" >  
-          <div class="sixteen columns"> 
-                  <div class="mobile_spacing">
-                       <span class="title_text" >Portfolio</span>
-                  </div>
-                  
-                  <div class="isotope_option" >   
-        			<section id="options" class="clearfix" >
-        				<ul id="filters" class="option-set clearfix" data-option-key="filter">
-        					<!-- Add portfolio category -->                          
-        					<li>
-                            	<a href="#filter" data-option-value="*" class="selected" >
-                                    <div class="catName"> <span>ALL</span> </div>
-        						</a>
-        					</li>
-        					<li>
-                            	<a href="#filter" data-option-value=".web"> 
-                            		<div class="catName"> <span>WEB</span> </div> 
-                            	</a>
-                            </li>
-        					<li>
-                            	<a href="#filter" data-option-value=".software"> 
-                            		<div class="catName"> <span>Software</span> </div>
-                            	</a>
-                            </li>
-                            <li>
-                            	<a href="#filter" data-option-value=".ecommerce"> 
-                            		<div class="catName">  <span>E-Commerce</span> </div>
-                            	</a>
-                            </li>
-        				</ul>
-        			</section>
-        		</div>
-                
-          </div>
-      </div>
-</div>
-
-
-
-<!-- Portfolio Title text -->
-<div class="contentWrapper fullWidth darkStyle">
-	<div class="container contentSpacing" > 
-		<div class="row textAlignCenter" >
-			<h1><span class="dark_color">we</span> <span class="dark_color">do</span> <span class="light_color">What We/</span><span class="dark_color">You like</span></h1>
-			<h2>Intelligent Filterable portfolio</h2>
-			<h4> With flexible detail page</h4>
-			<div class="separator_mini"></div> 
-			<hr>
-		</div>
-	</div> 
-</div> 
- 
- <!-- Portfolio Thumbnail/detail content -->             
-<div class="contentWrapper fullWidth darkStyle portfolioPage" style="padding:0px;">
-	<div class="container" >
-
-		<div id="gallery_isotope_1" class="isotope_items clearfix isotope_spacing darkStyle" >
+    
+    <!--<header>
       
-          <div class="item web" >
-              <a  class="detail_btn"  >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb1.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>	Project 1 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-              
-                  <div class="eleven columns" >
-                      <div class="mobile_spacing">
-                          <!-- project image slide show -->
-                          <div class="flexSlideshow fixedHeight" >
-                              <ul class="slides"> 
-                                  <li><a  class="lazyload" href="images/portfolio/image1.jpg" title="Some text">image</a></li>
-                                  <li><a  class="lazyload" href="images/portfolio/image1_a.jpg" title="Some text">image</a></li>
-                                  <li><a  class="lazyload" href="images/portfolio/image1_b.jpg" title="Some text">image</a></li>
-                                  <li><a  class="lazyload" href="images/portfolio/image1_c.jpg" title="Some text">image</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                          
-                  <div class="five columns" >
-                      <div class="mobile_spacing"> 
-                              
-                        <h3 >Project title 1</h3>
-                        <div class="separator_mini"></div> 
-                        
-                        <strong>Date:</strong> October 2012 <br>
-                        <strong>Client:</strong> Mapiya Company
-                        <div class="separator_mini"></div> 
-                          
-                        <ul>
-                            <li class="list4_white">jQuery</li><br>
-                            <li class="list4_white">CSS3</li><br>
-                        </ul>
-
-                        <a class=" list_hover "><span class="list7_white"> Andrew </span></a>
-                        <a class=" list_hover"><span class="list9_white"> Featured </span></a>
-                        <a class=" list_hover"><span class="list10_white"> 45</span></a>
-                            
-                            
-                        <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 	</p>
-                        
-                        <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                        
-                        <!-- Social network link -->
-                        <ul class="social_bookmarks noMargin">
-                            <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                            <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                            <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                            <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                            <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                        </ul>
-                          
-                      </div>
-                  </div>
-                  
-              </div>
-              
-          </div>
-                 
-                           
-          <div class="item web" >
-              <a class="detail_btn"  >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb2.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>	Project 2 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Eorem ipsum dolor sit amet, consectetur adipisicing elit	</span></h6></div>
-               </a>
-               
-               <!-- Project detail content -->
-               <div class="fullDetails" >
-
-                    <div class="nine columns alpha" >
-                        <div class="mobile_spacing">
-                            <!-- project video -->
-                            <div class="midVideo">
-                                <div class="addVideo" data-width="100%" data-height="100%" data-autoplay="false" data-url="http://vimeo.com/45778774" ></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="seven columns" >
-                        <div class="mobile_spacing"> 
-                        
-                            <h3 >Project title 2</h3>
-                            <div class="separator_mini"></div> 
-                              
-                            <strong>Date:</strong> October 2012 <br>
-                            <strong>Client:</strong> Mapiya Company
-                            <div class="separator_mini"></div>   
-                            
-                            <ul>
-                                <li class="list4_white">jQuery</li><br>
-                                <li class="list4_white">CSS3</li><br>
-                            </ul>
-
-                            <a class=" list_hover "><span class="list7_white"> Andrew </span></a>
-                            <a class=" list_hover"><span class="list9_white"> Featured </span></a>
-                            <a class=" list_hover"><span class="list10_white"> 45</span></a>
-                            
-                            <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                            <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                            
-                            <!-- Social network link -->
-                            <ul class="social_bookmarks noMargin">
-                                <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                                <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                                <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                                <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                                <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                            </ul>
-                            
-                        </div> 
-                    </div> 
-
-              </div>
-              
-          </div>
-                   
-                                      
-          <div class="item web" >
-              <a class="detail_btn">
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb3.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>	Project 3 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                    <div class="row" >
-                        <div class="mobile_spacing"> 
-                            
-                            <h3 >Project title 3</h3>
-                            
-                            <div class="separator_mini"></div> 
-                            <strong>Date:</strong> October 2012 <br>
-                            <strong>Client:</strong> Mapiya Company
-                            <div class="separator_mini"></div> 
-                            
-                            <ul>
-                                <li class="list4_white">jQuery</li><br>
-                                <li class="list4_white">CSS3</li><br>
-                            </ul>
-                            
-                            <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                            <strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a>
-                            
-                        </div> 
-                    </div>
-                      
-              </div>
-              
-          </div>
-          
-                                     
-          <div class="item web" >
-              <a class="detail_btn">
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb4.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>	Project 4 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                  <div class="sixteen columns">
-                      <h3 >Project title 4</h3>
-                      <div class="separator_mini"></div> 
-                  </div>
-              
-                  <div class="eleven columns" >
-                          <div class="fixedHeight">
-                              <a  class="lazyload scale-img" href="images/portfolio/image4.jpg" title="Some text">image</a>
-                          </div>
-                  </div>
-                      
-                  <div class="five columns" >
-                      <div class="mobile_spacing"> 
-                      
-                          <h4 >Mini Title text</h4>
-                          <div class="separator_mini"></div> 
-                          
-                          <strong>Date:</strong> October 2012 <br>
-                          <strong>Client:</strong> Mapiya Company
-                          <div class="separator_mini"></div> 
-                          
-                          <ul>
-                              <li class="list4_white">Photoshop</li><br>
-                              <li class="list4_white">Indesign</li><br>
-                          </ul>
-                          
-                          <a class=" list_hover "><span class="list7_white"> Andrew </span></a>
-                          <a class=" list_hover"><span class="list9_white"> Featured </span></a>
-                          <a class=" list_hover"><span class="list10_white"> 45</span></a>
-                          
-                          <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                      </div> 
-                  </div>
-
-              </div>
-              
-          </div>
-          
-                                            
-          <div class="item web" >
-              <a class="detail_btn">
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb5.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>	Project 5 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                    <div class="sixteen columns">
-                        <h3 >Project title 5</h3>
-                        <div class="separator_mini"></div> 
-                    </div>
-                
-                    <div class="eleven columns" >
-                        <div class="fixedHeight">
-                            <a  class="lazyload scale-img" href="images/portfolio/image5.jpg" title="Some text">image</a>
-                        </div>
-                    </div>
-                        
-                    <div class="five columns" >
-                        <div class="mobile_spacing">
-                            
-                            Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                            <div class="separator_mini"></div> 
-                            
-                            <a class=" list_hover "><span class="list7_white"> Andrew </span></a>
-                            <a class=" list_hover"><span class="list9_white"> Featured </span></a>
-                            <a class=" list_hover"><span class="list10_white"> 45</span></a>
-                            
-                            <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                            
-                            <!-- Social network link -->
-                            <ul class="social_bookmarks noMargin">
-                                <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                                <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                                <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                                <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                                <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                            </ul>
-                            
-                        </div> 
-                    </div>
-
-              </div>
-              
-          </div>
-              
-              
-          <div class="item web" >
-              <a  class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb1.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>	Project 6 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project sunt in culpa qui officia deserunt mollit anim id est laborum.	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-
-                   <div class="eleven columns alpha" >
-                        <div class="mobile_spacing">
-                            <!-- project image slide show -->
-                            <div class="flexSlideshow fixedHeight" >
-                                <ul class="slides"> 
-                                    <li><a  class="lazyload" href="images/portfolio/image1.jpg" title="Some text">image</a></li>
-                                    <li><a  class="lazyload" href="images/portfolio/image1_a.jpg" title="Some text">image</a></li>
-                                    <li><a  class="lazyload" href="images/portfolio/image1_b.jpg" title="Some text">image</a></li>
-                                    <li><a  class="lazyload" href="images/portfolio/image1_c.jpg" title="Some text">image</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                        
-                    <div class="five columns" >
-                        <div class="mobile_spacing">
-                        
-                            <h3 >Project title 6</h3>
-                            <div class="separator_mini"></div> 
-                              
-                            <ul>
-                                <li class="list4_white">jQuery</li><br>
-                                <li class="list4_white">CSS3</li><br>
-                            </ul>
-
-                            <a class=" list_hover "><span class="list7_white"> Andrew </span></a>
-                            <a class=" list_hover"><span class="list9_white"> Featured </span></a>
-                            <a class=" list_hover"><span class="list10_white"> 45</span></a>
-                          
-                            <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                            <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                            
-                            <!-- Social network link -->
-                            <ul class="social_bookmarks noMargin">
-                                <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                                <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                                <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                                <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                                <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                            </ul>
-                            
-                        </div> 
-                    </div>
-
-              </div>
-              
-          </div>
-               
-                           
-          <div class="item software" >
-              <a class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb2.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>Software Project 1</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Officia deserunt mollit anim id est laborum description about project	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                    <div class="sixteen columns">
-                        <h3 >Software Project 1</h3>
-                        <div class="separator_mini"></div> 
-                    </div>
-                
-                    <div class="eleven columns" >
-                        <div class="fixedHeight">
-                            <a  class="lazyload scale-img" href="images/portfolio/image2.jpg" title="Some text">image</a>
-                        </div>
-                    </div>
-                        
-                    <div class="five columns" >
-                        <div class="mobile_spacing">
-                        
-                            Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                            
-                            <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                            
-                        </div> 
-                    </div>
-
-              </div>
-              
-          </div>
-                
-                                      
-          <div class="item software" >
-              <a class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb3.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>Software Project 2	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	About project labore et dolore magna aliqua. Ut enim ad minim veniam	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                  <div class="row" >
-                      <div class="mobile_spacing"> 
-                          
-                          <h3 >Software Project 2</h3>
-                          <div class="separator_mini"></div>
-                           
-                          <strong>Date:</strong> October 2012 <br>
-                          <strong>Client:</strong> Mapiya Company
-                          <div class="separator_mini"></div> 
-                          
-                          <ul>
-                              <li class="list4_white">jQuery</li><br>
-                              <li class="list4_white">CSS3</li><br>
-                          </ul>
-                          
-                          <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                          
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                          
-                      </div> 
-                  </div> 
-
-              </div>
-              
-          </div>
-             
-                                            
-          <div class="item software" >
-              <a  class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb4.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>Software Project 3	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-
-                  <div class="sixteen columns">
-                      <h3 >Software Project 3</h3>
-                      <div class="separator_mini"></div> 
-                  </div>
-              
-                  <div class="eleven columns" >
-                      <div class="fixedHeight">
-                          <a  class="lazyload scale-img" href="images/portfolio/image4.jpg" title="Some text">image</a>
-                      </div>
-                  </div>
-                      
-                  <div class="five columns" >
-                      <div class="mobile_spacing">
-                      
-                          <strong>Date:</strong> October 2012 <br>
-                          <strong>Client:</strong> Mapiya Company
-                          <div class="separator_mini"></div> 
-                          
-                          <ul>
-                              <li class="list4_white">Photoshop</li><br>
-                              <li class="list4_white">Indesign</li><br>
-                          </ul>
-                          
-                          <a class="list_hover "><span class="list7_white"> Chris </span></a>
-                          <a class="list_hover"><span class="list9_white"> Featured </span></a>
-                          <a class="list_hover"><span class="list10_white"> 75</span></a>
-                          <div class="separator_mini"></div> 
-                          
-                          Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                          <div class="separator_mini"></div> 
-                          
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                          
-                      </div> 
-                  </div>
-
-              </div>
-              
-          </div>
-          
-                                            
-          <div class="item software" >
-              <a  class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb5.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>Software Project 4</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project magna aliqua. Ut enim ad minim veniam	</span></h6></div>
-              </a> 
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                  <div class="sixteen columns">
-                      <h3 >Software Project 4</h3>
-                      <div class="separator_mini"></div> 
-                  </div>
-              
-                  <div class="eleven columns" >
-                      <div class="fixedHeight">
-                          <a  class="lazyload scale-img" href="images/portfolio/image5.jpg" title="Some text">image</a>
-                      </div>
-                  </div>
-                      
-                  <div class="five columns" >
-                      <div class="mobile_spacing">
-                      
-                          Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                          <div class="separator_mini"></div> 
-                          
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                          
-                      </div> 
-                  </div>
-
-              </div>
-               
-          </div>
-                 
-                                            
-          <div class="item software" >
-              <a class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb1.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span> Software Project 5 </span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project	</span></h6></div>
-              </a> 
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-              
-                  <div class="sixteen columns">
-                      <h3 >Software Project 5</h3>
-                      <div class="separator_mini"></div> 
-                  </div>
-              
-                  <div class="eleven columns" >
-                      <div class="fixedHeight">
-                          <a  class="lazyload scale-img" href="images/portfolio/image1.jpg" title="Some text">image</a>
-                      </div>
-                  </div>
-                      
-                  <div class="five columns" >
-                      <div class="mobile_spacing">
-                      
-                          Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                          <div class="separator_mini"></div> 
-                          
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                          
-                      </div> 
-                  </div>
-
-              </div>
-              
-          </div>
-          
-                                            
-          <div class="item ecommerce" >
-              <a  class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb2.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>E-Com Project 1 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project	</span></h6></div>
-              </a>
-              
-              <!-- Project detail content -->
-              <div class="fullDetails" >
-                  
-                  <div class="sixteen columns">
-                      <h3 >E-Commerce Project 1</h3>
-                      <div class="separator_mini"></div> 
-                  </div>
-              
-                  <div class="eleven columns" >
-                      <div class="fixedHeight">
-                          <a  class="lazyload scale-img" href="images/portfolio/image2.jpg" title="Some text">image</a>
-                      </div>
-                  </div>
-                      
-                  <div class="five columns" >
-                      <div class="mobile_spacing">
-                      
-                          <h4 >Mini Title text</h4>
-                          <div class="separator_mini"></div> 
-                          
-                          <a class=" list_hover "><span class="list7_white"> Chris </span></a>
-                          <a class=" list_hover"><span class="list9_white"> Featured </span></a>
-                          <a class=" list_hover"><span class="list10_white"> 75</span></a>
-                          
-                          <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                          
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                          
-                      </div> 
-                  </div>
-
-              </div>
-              
-          </div>
-          
-                                            
-          <div class="item ecommerce" >
-              <a  class="detail_btn" >
-                  <span class="portImg">
-                      <div class="overlay detail" ></div>
-                      <img src="images/portfolio/thumb3.jpg"alt="Wonder" />
-                  </span>
-                  <!-- project Name -->
-                  <div class="projName" ><h6><span>E-Com Project 2 	</span></h6></div>
-                  <!-- project mini description -->
-                  <div class="miniDesc" ><h6><span>	Small description about project	</span></h6></div>
-              </a> 
-              
-              <div class="fullDetails" >
-                  
-                  <div class="nine columns" >
-                      <div class="mobile_spacing">
-                          <!-- project video -->
-                          <div class="midVideo">
-                              <div class="addVideo" data-width="100%" data-height="100%" data-autoplay="false" data-url="http://vimeo.com/45778774" ></div>
-                          </div>
-                      </div>
-                  </div>
-                      
-                  <div class="seven columns" >
-                      <div class="mobile_spacing"> 
-                      
-                          <h3 >E-Commerce Project 2</h3>
-                          <div class="separator_mini"></div> 
-                            
-                          <strong>Date:</strong> October 2012 <br>
-                          <strong>Client:</strong> Mapiya Company
-                          <div class="separator_mini"></div> 
-                          
-                          <ul>
-                              <li class="list4_white">jQuery</li><br>
-                              <li class="list4_white">CSS3</li><br>
-                          </ul>
-                          
-                          <p>Eorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
-                          
-                          <p><strong>Live Url:</strong>  <a class="underLine"><em>Mapiya Company</em></a></p>
-                          
-                          <!-- Social network link -->
-                          <ul class="social_bookmarks noMargin">
-                              <li class="twitter_white noMargin"><a title="twitter" >Follow us on Twitter</a></li>
-                              <li class="facebook_white noMargin"><a title="Facebook" >Join our Facebook Group</a></li>
-                              <li class="gplus_white noMargin"><a title="Google Plus" >Join me on Google Plus</a></li>
-                              <li class="rss_white noMargin"><a title="RSS" >RSS</a></li>
-                              <li class="digg_white noMargin"><a title="Digg" >Digg</a></li>
-                          </ul>
-                          
-                      </div> 
-                  </div>
-
-              </div>
-              
-          </div>
-
-		</div>
-           	
-		<!-- Page scroll down to Next page -->  
-		<a class=" move_down_white" href="#!sample_video"><span></span></a>
-        
-	</div>
-</div>
-
-
-
-
-
-
-<!-- Single video  -->
-
-<div class="contentWrapper "  data-id="!sample_video"  >
- 
-	<div class="fullWidth titleTop lightStyle">
-		<div class="container" >  
-        	<div class="sixteen columns"> 
-                    <div class="mobile_spacing">
-                    	<span class="title_text" >sample video </span>
-                    </div>
-			</div>
+        <div id="mainNav" class="uk-offcanvas-bar">
+            <ul class="uk-nav-offcanvas uk-canvas-bar-flip"></ul>
         </div>
-  	</div>
     
-	<div class="fullWidth parallax" data-src="images/background/image3.jpg" data-src-small="images/background/image3_s.jpg"  >
-		<div class="parallaxPattern"></div>
-		<div class="container" >     
-            <div class="table_middle">                
-                <div class="middle_align"> 
-                    <div class="fifteen columns videoLeftSpacing alpha" >
-                        <!-- Add video -->
-                        <hr>
-                        <div class="addVideo video_content "  id="video" data-url="http://vimeo.com/45778774" > 
-                        	<div class="video_hover"></div>
-                        	<img class="scale-with-grid" src="images/video_img1.jpg" />
-                        </div> 
-                        <hr>
-                    </div>
-                </div> 
-                        
-            </div>
-        </div>
-        
-        <!-- Page scroll down to Next page -->
-		<a class="move_down_white" href="#!contactus" ><span></span></a>
-	</div>
-   
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- Contact us -->
-       
-<div class="contentWrapper contactPage" data-id="!contactus" >    
-
-	<div class="fullWidth titleTop lightStyle" >
-        <div class="container" >  
-			<div class="sixteen columns"> 
-				<span class="title_text dark_color" >Contact Us</span>
-			</div>
-		</div>
-	</div>
+    </header>-->
+    
+    
+    
   
-	<div class="fullWidth parallax removePadding" data-src="images/background/image4.jpg" data-src-small="images/background/image4_s.jpg" >
-    <div class="overlayPattern" ></div>
-		<div class="container contactUsPg" >           
-			<hr><hr>
-			<div class="one columns alpha" >
-				<div class="separator_mini"></div>
-			</div>
-                
-			<div class=" fourteen columns alpha darkStyle "> 
-				<hr><hr>
-				<!-- Place you Address here -->
-				<div class="six columns alpha textAlignRight" >
-					<div class="mobile_spacing">     
-						<p>
-                            0025 street name<br/>
-                            los Angle, 23589, USA
-                            <br/><br/>                      
-                            Tel: 123.123.2586<br/>
-                            Mob: +044-3658954869
-                            <br/><br/>                    
-                            Email: <a>admin@websitename.com</a> <br/>
-						</p>
-						<div class="separator_mini"></div>
-					</div>
-				</div>                          
-        
-				<div class="one columns alpha" >
-					<div class="separator_mini"> </div>
-				</div>
-                            
-				<div id="contact" class="seven columns alpha" >
-					<div class="mobile_spacing">        
-						<form name="contact" method="post" >
-							<input type="text" value="Name" id="name" name="name"  
-								onfocus="if(this.value == 'Name') {this.value = '';}"	
-								onblur="if (this.value == '') {this.value = 'Name';}" />
-							<input type="text" value="Email" id="email" name="email"  
-								onfocus="if(this.value == 'Email') {this.value = '';}"  
-								onblur="if (this.value == '') {this.value = 'Email';}" />
-							<hr>                                 
-							<textarea cols="30" rows="5" id="comments" name="comments"	
-								onfocus="if(this.value == 'Comments...') {this.value = '';}" 
-								onblur="if (this.value == '') {this.value = 'Comments...';}">Comments...</textarea>
-							<br/>                                
-							<button type="submit" id="email_submit"  class="button alignLeft">SEND</button>                                  
-							<div id="reply_message" ></div>                            
-						</form>                             
-					</div>
-				</div>
-				<hr>
-                    
-			</div>
-                
-		</div>
-        
-		<div class="footer_fit"> </div>  
-        
-		<div class="footer" >
-			<div class="footer_container darkStyle bg_transparent" > 
-            
-				<a href="#!home" class="move_up" ><span></span></a>
-				<div class="separator_mini"></div>
-                
-				<!-- Place your copyright text -->
-				<h6 class="bottomText">Copyright © 2012 FMedia</h6>
-                
-				<div class="footer_social">
-					<ul class="social_bookmarks" >                 
-						<li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
-						<li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
-						<li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
-						<li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
-						<li class="rss_white noMargin"><a >RSS</a></li>
-					</ul>
-				</div> 
-                      
-			</div>
-		</div>            
-
-	</div>
     
-</div>
-
-
+    <footer></footer>
 </body>
+    
+    <!--  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>-->
+ 
+    <script>
 
+    // The starting defaults.
+    var config = {
+            wait: '.33s',
+            enter: 'bottom',
+            move: '0px',
+            over: '0.66s',
+            easing: 'ease-in-out',
+            viewportFactor: 0.33,
+            reset: false,
+            init: true
+          };
+
+    window.scrollReveal = new scrollReveal( config );
+
+    </script>
+
+        
+    
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<script src="js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		Flowtime.parallaxInPx(true);
+		//
+		// event management
+		Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		function onNavigation(e)
+		{
+			_gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+			// console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+			cacheTitle = document.title.replace("Flowtime.js | ", "");
+			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+			//console.log('page', e.page, 'pageIndex', e.);
+			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+			//console.log('prevSection', e.prevSection);
+			//console.log('nextSection', e.nextSection);
+			//console.log('prevPage', e.prevPage);
+			//console.log('nextPage', e.nextPage);
+			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+			//console.log("isOverview", e.isOverview);
+			//console.log('progress:', e.progress, 'total:', e.total);
+			// var value = Math.round(e.progress * 100 / e.total);
+			// console.log('Completion: ' + value + '%');
+		}
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+	<script type="text/javascript" src="http://slidemote.jit.su/slidemote.js#flowtime"></script>
+    
 </html>
