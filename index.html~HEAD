@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<!--[if IE 6]>
+<html id="ie6" lang="en-US" class="ie ie6 lt-ie9">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en-US" class="ie ie7 lt-ie9">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en-US" class="ie ie8 lt-ie9">
+<![endif]-->
+<!--[if gte IE 9]>
+<html lang="en-US" class="ie ie9">
+<![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en-US" class="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>Of Soldier Blood</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- CSS
+  ================================================== --> 
+  
+  <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  	
+    <!-- Included CSS files 
+	================================================== -->
+    
+  	<link rel="stylesheet" type="text/css"  href="css/main.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/base.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/color.css">
+	<link rel="stylesheet" type="text/css"  href="css/skeleton.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/flexslider.min.css" media="screen" />
+    <link rel="stylesheet" href="css/supersized.min.css" type="text/css" media="screen" />
+     <link rel="stylesheet" href="css/supersized.shutter.min.css" type="text/css" media="screen" />
+    
+    <!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+    
+    
+    <!-- Included CSS for Flowtime.js 
+    ================================================== --> 
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flowtime.css">
+   <!-- <link rel="stylesheet" href="css/default.css">-->
+    <link rel="stylesheet" href="css/prism.css">
+    
+    <!-- include typekit -->
+    <script type="text/javascript" src="//use.typekit.net/taw2maw.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    
+    <!-- include boilerplates and UI Kit styling -->
+    <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/uikit.gradient.css" rel="stylesheet" type="text/css">
+    <link href="css/addons/uikit.almost-flat.addons.min.css" type="text/css">
+    
+    
+    <!-- Included javascript files 
+	================================================== -->
+  
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!--[if !IE]><!-->
+	<script src="js/ios6-timers.js"></script> 
+    <!--<![endif]-->
+	<script type="text/javascript" src="js/custom.min.js"></script>
+    <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+    <script type="text/javascript" src="js/supersized.shutter.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.isotope.min.js" ></script>  
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+	<script type="text/javascript" src="js/portfolio.detail.min.js"></script>  
+    <script type="text/javascript" src="js/main-fm.min.js"></script> 
+
+
+	<script type="text/javascript">
+
+		jQuery(function($){
+				
+			$.supersized({
+				
+				// Functionality
+				slideshow               :   1,			// Slideshow on/off
+				autoplay				:	1,			// Slideshow starts playing automatically
+				start_slide             :   1,			// Start slide (0 is random)
+				stop_loop				:	0,			// Pauses slideshow on last slide
+				random					: 	0,			// Randomize slide order (Ignores start slide)
+				slide_interval          :   7000,		// Length between transitions
+				transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+				transition_speed		:	1000,		// Speed of transition
+				new_window				:	1,			// Image links open in new window/tab
+				pause_hover             :   0,			// Pause slideshow on hover
+				keyboard_nav            :   1,			// Keyboard navigation on/off
+				performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+				image_protect			:	1,			// Disables image dragging and right click with Javascript
+																   
+				// Size & Position						   
+				min_width		        :   0,			// Min width allowed (in pixels)
+				min_height		        :   0,			// Min height allowed (in pixels)
+				vertical_center         :   1,			// Vertically center background
+				horizontal_center       :   1,			// Horizontally center background
+				fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+				fit_portrait         	:   0,			// Portrait images will not exceed browser height
+				fit_landscape			:   0,			// Landscape images will not exceed browser width
+																   
+				// Components							
+				slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+				thumb_links				:	1,			// Individual thumb links for each slide
+				thumbnail_navigation    :   0,			// Thumbnail navigation
+				slides 					:  	[			// Slideshow Images, image_small attribute is used to load the mobile version image, main_title attribute is used to add the image tile div
+														{image : 'images/home_slider/index_02.jpg', image_small : 'images/home_slider/index_02_s.jpg', main_title : ".home_slider_title1"},  
+														{image : 'images/home_slider/index_06.jpg', image_small : 'images/home_slider/index_06_s.jpg', main_title : ".home_slider_title2"}, 
+														{image : 'images/home_slider/index_09.jpg', image_small : 'images/home_slider/index_09_s.jpg', main_title : ".home_slider_title3"}
+												],
+												
+				// Theme Options			   
+				progress_bar			:	1,			// Timer for each slide							
+				mouse_scrub				:	0
+						
+				});
+			});
+			
+
+	</script>
+    
+    
+     <script>
+	
+				/* Site Main plug-in initilize */
+		
+		$(document).ready(function(){
+			
+			
+
+			jQuery(function($){
+				$("body").mainFm({
+					
+					/* Set the opening page. 
+					leave it blank value if you need to show the home page as a opening page*/
+					currentPage : "!home",
+					
+					/* FlexSlider slideshow speed */
+					slideshowSpeed : 5000
+					
+				});
+			});
+
+
+
+			
+			//.parallax(xPosition, speedFactor, outerHeight) options:
+			//xPosition - Horizontal position of the element
+			//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+			//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+			$('.parallax').each(function(){
+				$(this).parallax("50%", 0.4, true);
+			});
+
+			
+
+/* Initialize  - isotope Portfolio */
+
+			$(function(){
+			  
+			  var $container = $('#gallery_isotope_1');
+			  var $optionSets = $('#options .option-set'),
+				  $optionLinks = $optionSets.find('a');
+		
+			  $optionLinks.click(function(){
+				var $this = $(this);
+				
+				// don't proceed if already selected
+				if ( $this.hasClass('selected') ) {
+				  return false;
+				}
+				var $optionSet = $this.parents('.option-set');
+				$optionSet.find('.selected').removeClass('selected');
+				$this.addClass('selected');
+		  
+				// make option object dynamically, i.e. { filter: '.my-filter-class' }
+				   var options = {},
+					  key = $optionSet.attr('data-option-key'),
+					  value = $this.attr('data-option-value');
+				  // parse 'false' as false boolean
+				  value = value === 'false' ? false : value;
+				  options[ key ] = value;
+				  if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+					// changes in layout modes need extra logic
+					changeLayoutMode( $this, options )
+				  } else {
+					// otherwise, apply new options
+					$container.isotope( options );
+				  }
+				
+				return false;
+			  });
+			  
+			});
+			
+			// Portfolio isotope gallery initailize
+
+			$('#gallery_isotope_1').isotope({ 
+				itemSelector : '.item', layoutMode : 'fitRows'
+    		});
+			
+			
+			// Portfolio isotope gallery categories Filter initialize
+			jQuery(function($){
+				$('.portfolioPage').detailPage({
+					filter : ".filter_options",
+					buttonColor : "white_arrow"
+				})
+			});	
+			
+
+// Email submit action			
+			$("#email_submit").click(function() { 
+									
+				$('#reply_message').removeClass();
+				$('#reply_message').html('')
+				var regEx = "";	 
+								
+				// validate Name				
+				var name = $("input#name").val();  
+				regEx=/^[A-Za-z .'-]+$/; 
+				if (name == "" || name == "Name"  || !regEx.test(name)) { 
+					$("input#name").val(''); 
+					$("input#name").focus();  
+					return false;  
+				}
+				
+				// validate Email						  
+				var email = $("input#email").val();  
+				regEx=/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;											
+				if (email == "" || email == "Email" || !regEx.test(email)) { 
+					$("input#email").val(''); 
+					$("input#email").focus();  
+					return false;  
+				}  
+				
+				// validate comment			
+				var comments = $("textarea#comments").val(); 
+				if (comments == "" || comments == "Comments..." || comments.length < 2) { 
+					$("textarea#comments").val(''); 
+					$("textarea#comments").focus();  
+					return false;  
+				}  
+									
+				var dataString = 'name='+ $("input#name").val() + '&email=' + $("input#email").val() + '&comments=' + $("textarea#comments").val();									
+				$('#reply_message').addClass('email_loading');
+				
+				// Send form data to mailer.php 
+				$.ajax({
+					type: "POST",
+					url: "mailer.php",
+					data: dataString,
+					success: function() {
+						$('#reply_message').removeClass('email_loading');
+						$('#reply_message').addClass('list3');
+						$('#reply_message').html("Mail sent sucessfully")
+						.hide()
+						.fadeIn(1500);
+							}
+						});
+				return false;
+				
+			});
+			
+				
+		});
+	</script>
+
+
+    
+</head>
+    
+    
+<body>
+    
+    
+    
+<div class="pageFade" > </div>
+
+<!--
+Site main frame begin
+Note: Don't edit main frame, except comment area
+-->
+
+
+
+
+
+
+<!-- 
+Note: mobile_spacing class is used to add spacing arround the content in mobile device not in desktop,
+if you remove the mobile_spacing class, the layout design doesn't effect in desktop it only effect in mobile device
+--> 
+
+ 
+ <!-- Supersized home page slider show Arrow Navigation-->
+<div id="superNav">
+	<a id="prevslide" class="load-item padBottom" ></a>
+	<a id="nextslide" class="load-item padBottom" ></a>
+ 	<a id="play-button" class="padBottom" ><img id="pauseplay" src="images/supersized/pause.png" /></a>
+</div> 
+
+
+<div class="contentWrapper homeSlider" data-id="!home" >
+	<div class="homepage_con">
+
+    	
+        <!-- Homepage fullscreen slideshow Title text 1 -->
+		<div class="home_slider_title1" ></div>
+    	
+        
+         <!-- Homepage fullscreen slideshow Title text 2 -->
+         <div class="home_slider_title2"  ></div>
+        
+        
+         <!-- Homepage fullscreen slideshow Title text 3 -->
+		<div class="home_slider_title3"  ></div>
+    
+    	
+        
+
+	
+   
+  </div>  
+</div>    
+ 
+
+
+
+
+
+
+<div class="header stayBottom" >
+    
+	<div class="container" style="width:100%" >
+       
+        <div class="logo " >
+			<a href="#!home"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+        </div>
+       
+		<div class="nav" >
+			<ul id="navHolder" >
+                <!--  Add require site page navigation -->                    
+                <li><a href="#!home" class="first">ON POST</a></li> 
+                <li><a href="#!aboutus">Usage</a></li>
+                <li><a href="story.html">Begin Reading</a></li>
+                                                    
+			</ul>
+		</div>
+
+	</div>
+</div>
+    
+    
+    
+    
+     
+<!-- About us  page -->
+        
+<div class="contentWrapper"  data-id="!aboutus" >
+
+	<div class="fullWidth titleTop lightStyle">
+		<div class="container" >  
+        	<div class="sixteen columns"> 
+                    <div class="mobile_spacing">
+                    	 <span class="title_text" ><br><br>Letters from Soldiers<br><br></span>
+                    </div>
+			</div>
+        </div>
+  	</div>
+    
+     
+    <div class="fullWidth darkStyle" > 
+        <div class="container" >        
+                      
+            <div class="separator_mini"></div> 
+            
+             <div class="sixteen columns" >
+				<div class="mini_description">
+                    <p>Of the Old Breed is a World War II interactive narrative that follows the life of a soldier. Users are able to choose what path the soldier goes on and decides the life decisions of their life. Ultimately, the user controls the fate of the soldier, becomes immersed in his story and understands consequences of their actions, along with the emotional impacts on their family.  </p>
+                    
+                    <p>World War II veterans are quickly fading from our daily lives as time continues to march on. In order to preserve their legacies, memories and experiences this interactive narrative is designed to target a large audience that encompasses military families, veterans, historical fiction fans, students, and “nostalgiaists”. Military families and veterans expect any creative work to be respectful to the military. Fans of historical fiction and students will expect historical accuracy. Nostalgiaists like being immersed in a different time period. All of these demographic groups are highly educated and perceptive. They will expect a story that is not only truthful but illuminates a greater meaning than the characters and events taking place. </p>
+
+<p>Of the Old Breed intends to immerse the viewer in story that places the life, actions, and happiness of soldier in their hands along with reliving famous battles from World War II. Users will expect the characters to be human and tangible. </p>
+
+<p><b>Communication Context </b></p>
+<p>This narrative will be a web app that incorporates other visual mediums including photographs, letters, and audio from World War II. Although these other forms of communication are digitized, they will improve the narrative’s tangibility and have kinesthetic effects on the user. </p>
+
+<p><b>Design Implications </b></p>
+<p>The user interface needs to follow a visual style in order to reflect the time period. The visual style will incorporate grainy images, muted colors, and handwriting. The HBO series Band of Brothers and The Pacific inspired the art direction Of the Old Breed. The films are vividly rich with textures that resemble the photo graininess and the rough canvas feel of a soldier’s uniforms. As well, they use muted colors to set the bleak, harsh environment of a warfront. The UI will incorporate some skeumorphism, mostly replicating the gritty look of a battlefield. As an interactive narrative, the UI will also be following minimalistic design trends. The images and text are primary focus of attention. </p>
+                    
+<p><b>Narrative Structure, Performance Objects, Content</b></p>
+Narrative Structure
+<p>It has a branching structure from a single point where a single starting point may lead to multiple developments and outcomes. This branching structure creates a divergently depth navigation system that is impacted by the user’s choices. Technically there are two navigational flows, the path of the soldier and the screen menus. The soldier’s path traverses on different points, whereas the screen menus will only show four item selections. Whichever item selection is chosen influences the soldier’s course. </p>
+
+<p>Performance Objectives
+1.	Present an accurate WWII narrative that immerse the viewer in the story
+2.	Show how the consequences of our actions impact family. 
+3.	Create an understanding of how soldiers cope with death breathing down their necks. 
+The three objectives above outline the overall performance objectives of this piece. Nonetheless, the objectives of each part of the story will be achieved through a series of menus.</p>
+
+
+
+                    <hr>
+				</div>
+			</div>
+            
+            <div class="clear"></div> 
+            
+
+
+   
+        
+        <!-- Page scroll down to Next page -->
+        <a class=" move_down_white" href="#!services"><span></span></a>
+                 
+	</div>
+    
+</div>
+
+
+
+
+
+
+
+    
+</div>
+
+
+    
+    
+    <!--<header>
+      
+        <div id="mainNav" class="uk-offcanvas-bar">
+            <ul class="uk-nav-offcanvas uk-canvas-bar-flip"></ul>
+        </div>
+    
+    </header>-->
+    
+    
+    
+  
+    
+    <footer></footer>
+</body>
+    
+    <!--  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>-->
+ 
+    <script>
+
+    // The starting defaults.
+    var config = {
+            wait: '.33s',
+            enter: 'bottom',
+            move: '0px',
+            over: '0.66s',
+            easing: 'ease-in-out',
+            viewportFactor: 0.33,
+            reset: false,
+            init: true
+          };
+
+    window.scrollReveal = new scrollReveal( config );
+
+    </script>
+
+        
+    
+	<script src="js/brav1toolbox.js"></script>
+	<script src="js/flowtime.js"></script>
+	<script src="js/prism.js"></script>
+
+	<script type="text/javascript">
+		var cacheTitle = document.title.replace("Flowtime.js | ", "");
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-1228618-10']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackEvent', 'Flowtime', 'Landing', document.title]);
+		(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		
+		// Configuration API test
+		Flowtime.showProgress(true);
+		// Flowtime.fragmentsOnSide(true);
+		// Flowtime.fragmentsOnBack(true);
+		// Flowtime.useHistory(false);
+		// Flowtime.slideInPx(true);
+		// Flowtime.sectionsSlideToTop(true);
+		// Flowtime.gridNavigation(false);
+		// Flowtime.useOverviewVariant(true);
+		Flowtime.parallaxInPx(true);
+		//
+		// event management
+		Flowtime.addEventListener("flowtimenavigation", onNavigation, false);
+		function onNavigation(e)
+		{
+			_gaq.push(['_trackEvent', 'Flowtime', 'Navigation', cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", "")]);
+			// console.log(cacheTitle + ' > ' + document.title.replace("Flowtime.js | ", ""));
+			cacheTitle = document.title.replace("Flowtime.js | ", "");
+			//console.log('section', e.section, 'sectionIndex', e.sectionIndex);
+			//console.log('page', e.page, 'pageIndex', e.);
+			//console.log('pastSectionIndex', e.pastSectionIndex, 'pastPageIndex', e.pastPageIndex);
+			//console.log('prevSection', e.prevSection);
+			//console.log('nextSection', e.nextSection);
+			//console.log('prevPage', e.prevPage);
+			//console.log('nextPage', e.nextPage);
+			//console.log('fragment', e.fragment, + 'fragmentIndex', e.fragmentIndex);
+			//console.log("isOverview", e.isOverview);
+			//console.log('progress:', e.progress, 'total:', e.total);
+			// var value = Math.round(e.progress * 100 / e.total);
+			// console.log('Completion: ' + value + '%');
+		}
+		// starts the application with configuration options
+		Flowtime.start();
+	</script>
+	<script type="text/javascript" src="http://slidemote.jit.su/slidemote.js#flowtime"></script>
+    
+</html>
